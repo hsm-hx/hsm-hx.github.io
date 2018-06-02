@@ -104,7 +104,7 @@ header ul li:nth-of-type(2){
 .timeline:before{
   content: "";
   position: absolute;
-  left: 50%;
+  left: 500px;
   margin-top: -50px; margin-left: -2px;
   height: 1250px; width: 0;
   border: 2px #fff solid;
@@ -114,7 +114,7 @@ header ul li:nth-of-type(2){
 }
 .timeline-circle{
   position: absolute;
-  left: 50%;
+  left: 500px;
   margin-left: -12px; margin-top: 15px;
   width: 20px; height: 20px;
   -webkit-border-radius: 20px;
@@ -138,11 +138,11 @@ header ul li:nth-of-type(2){
 }
 .timeline-left .timeline-date{
   position: absolute;
-  left: 53%;
+  left: 530px;
 }
 .timeline-right .timeline-date{
   position: absolute;
-  right: 53%;
+  right: 530px;
 }
 .timeline-left .timeline-content{
   padding-left: 10px;
