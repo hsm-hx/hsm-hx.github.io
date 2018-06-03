@@ -39,7 +39,6 @@ ul{
 }
 
 header{
-  width: 100%;
   overflow: hidden;
   margin: 0; padding: 0;
   background: #000;
@@ -64,7 +63,7 @@ header ul li:nth-of-type(2){
 
 #top{
   padding: 50px 0 50px 0;
-  background: url("img/bg-top.png");
+  background: url("../img/bg-top.png");
   background-size: cover;
 }
 #top .content{
@@ -78,7 +77,7 @@ header ul li:nth-of-type(2){
   padding: 50px;
   line-height: 2em;
   overflow: hidden;
-  background: url("img/bg-stripe.png") repeat;
+  background: url("../img/bg-stripe.png") repeat;
 }
 #profile p{
   margin-bottom: 50px;
@@ -142,13 +141,13 @@ header ul li:nth-of-type(2){
 }
 .timeline-left .timeline-content{
   padding-left: 10px;
-  background: url("img/balloon.png") no-repeat;
+  background: url("../img/balloon.png") no-repeat;
   background-size: 100% auto;
   text-align: right;
 }
 .timeline-right .timeline-content{
   margin-left: 50%;
-  background: url("img/balloon-right.png") no-repeat;
+  background: url("../img/balloon-right.png") no-repeat;
   background-size: 100% auto;
 }
 .timeline-right .timeline-history{
@@ -185,7 +184,7 @@ header ul li:nth-of-type(2){
 
 #works{
   padding: 30px 50px;
-  background: url("img/bg-stripe.png") repeat;
+  background: url("../img/bg-stripe.png") repeat;
 }
 .works-line{
   margin: 0 auto;
@@ -198,6 +197,16 @@ header ul li:nth-of-type(2){
   margin: 20px;
   width: 147px; height: 147px;
 }
+label{
+  cursor: pointer;
+}
+.modal .modal-wrap{
+  background-color: #222;
+}
+.modal .modal-overlay .close{
+  color: #666;
+}
+
 footer{
   margin: 0 auto; padding: 50px 0;
   text-align: center;

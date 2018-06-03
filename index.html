@@ -15,18 +15,18 @@
     <meta property="og:locale" content="ja_JP" />
     <meta property="fb:app_id" content="">
     <title>Frontier</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="javascript" src="script.js"></script>
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
       <ul class="header">
         <li><a href="#"><img src="img/logo.png" alt="Frontier"></a></li>
         <li><img src="img/arrow.png" height="50" ></li>
-        <li><a href="https://twitter.com/hsm_hx/"><img src="img/twitter.png" alt="Twitter" class="icon"></a></li>
-        <li><a href="https://facebook.com/mwc922hsm/"><img src="img/fb.png" alt="Facebook" class="icon"></a></li>
-        <li><a href="https://github.com/hsm-hx/"><img src="img/github.png" alt="GitHub" class="icon"></a></li>
-        <li><a href="https://mwc922-hsm.hatenablog.com/"><img src="img/blog.png" alt="Blog" class="icon"></a></li>
+        <li><a href="https://twitter.com/hsm_hx/" target="_blank"><img src="img/twitter.png" alt="Twitter" class="icon"></a></li>
+        <li><a href="https://facebook.com/mwc922hsm/" target="_blank"><img src="img/fb.png" alt="Facebook" class="icon"></a></li>
+        <li><a href="https://github.com/hsm-hx/" target="_blank"><img src="img/github.png" alt="GitHub" class="icon"></a></li>
+        <li><a href="https://mwc922-hsm.hatenablog.com/" target="_blank"><img src="img/blog.png" alt="Blog" class="icon"></a></li>
       </ul>
     </header>
     <div id="top">
@@ -45,7 +45,7 @@
           レノファ山口FCを応援している”サポーター”で、地元の小さな温泉郷・湯田温泉が大好きです。卒業後は県外に出て勉強会などの盛んな環境で自分の能力を高めていきたいと思っていますが、いずれは山口県に貢献するような何かを作りたいです。
         </p>
       </div>
-      <a href="#profile"><span class="scroll">SCROLL DOWN</span></a>
+      <a href="#profile" data-scroll><span class="scroll">SCROLL DOWN</span></a>
     </div>
     <div id="profile">
       <h1>Sayaka Hata</h1>
@@ -165,23 +165,233 @@
     <div id="works">
       <h1>Works</h1>
       <div class="works-line">
-        <img src="img/saikyo.png" alt="高専カンファレンスin西京">
-        <img src="img/fes2017.png" alt="高専カンファレンスin西京">
-        <img src="img/lilia.png" alt="高専カンファレンスin西京">
-        <img src="img/datsuryokuQ.png" alt="高専カンファレンスin西京">
+        <label for="modal-trigger-saikyo"><img src="img/saikyo.png" alt="高専カンファレンスin西京"></label>
+        <label for="modal-trigger-fes2017"><img src="img/fes2017.png" alt="宇部高専第54回高専祭非公式ホームページ"></label>
+        <label for="modal-trigger-lilia"><img src="img/lilia.png" alt="リリアと虹色の夜想曲"></label>
+        <label for="modal-trigger-datsuryokuQ"><img src="img/datsuryokuQ.png" alt="脱力探偵Q"></label>
       </div>
       <div class="works-line">
-        <img src="img/datsuryokuP.png" alt="高専カンファレンスin西京">
-        <img src="img/welcome29.png" alt="高専カンファレンスin西京">
-        <img src="img/combapp.png" alt="高専カンファレンスin西京">
-        <img src="img/pxmtg.png" alt="高専カンファレンスin西京">
+        <label for="modal-trigger-datsuryokuP"><img src="img/datsuryokuP.png" alt="脱力探偵P"></label>
+        <label for="modal-trigger-welcome29"><img src="img/welcome29.png" alt="WELCOME - 宇部高専コンピュータ部"></labe>
+        <label for="modal-trigger-combapp"><img src="img/combapp.png" alt="CombApp"></label>
+        <label for="modal-trigger-pxmtg"><img src="img/pxmtg.png" alt="高専プロコン交流会"></labe>
       </div>
       <div class="works-line">
-        <img src="img/chesstrap.png" alt="高専カンファレンスin西京">
+        <label for="modal-trigger-chesstrap"><img src="img/chesstrap.png" alt="CHESS×TRAP"></labe>
       </div>
     </div>
+
+    <!--Works ModalWindows-->
+    <div class="modal">
+      <input id="modal-trigger-saikyo" class="checkbox" type="checkbox">
+      <div class="modal-overlay">
+        <label for="modal-trigger-saikyo" class="o-close"></label>
+        <div class="modal-wrap a-center">
+          <label for="modal-trigger-saikyo" class="close">&#10006;</label>
+          <h2>高専カンファレンスin西京</h2>
+          <p>
+            宇部・徳山高専の学生有志主催で2018年3月に宇部高専で開催された高専カンファレンスin西京という勉強会イベントの実行委員長を務めました。<br>
+            山口という辺境での開催だったにも関わらず当日は全国各地から40人を超える参加者の方々に集まっていただき、非常にやりがいのあるイベントとなりました。
+          </p>
+          <p>
+            実行委員長としての仕事以外にもイベント公式サイトのデザイン・コーディングや開催にあたっての企画検討などを担当。
+          </p>
+          <h3>参考リンク</h3>
+          <p>
+            <a href="https://kosenconf111.github.io" target="_blank">高専カンファレンスin西京公式サイト</a><br>
+            <a href="http://mwc922-hsm.hatenablog.com/entry/2018/03/18/220356" target="_blank">高専カンファレンスin西京の実行委員長をした話 - Theories of Pleiades</a><br>
+            <a href="http://mwc922-hsm.hatenablog.com/entry/2018/03/21/135025" target="_blank">高専カンファin西京についていろいろ思ってたこと - Theories of Pleiades</a><br>
+            <a href="http://mwc922-hsm.hatenablog.com/entry/2018/05/12/003212" target="_blank">高専カンファで得たイベント運営の知見の話・前編 - Theories of Pleiades</a><br>
+            <a href="http://mwc922-hsm.hatenablog.com/entry/2018/05/13/233407" target="_blank">高専カンファで得たイベント運営の知見の話・後編 - Theories of Pleiades</a><br>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <input id="modal-trigger-fes2017" class="checkbox" type="checkbox">
+      <div class="modal-overlay">
+        <label for="modal-trigger-fes2017" class="o-close"></label>
+        <div class="modal-wrap a-center">
+          <label for="modal-trigger-fes2017" class="close">&#10006;</label>
+          <h2>宇部高専第54回高専祭非公式ホームページ</h2>
+          <p>
+            学生会制作のホームページが例年に比べ圧倒的にクオリティが低かったので「ここはかっこいいホームページを作って煽ってやろう」という気持ちになりノリと勢いで制作したネタサイトです。<br>
+            宇部高専OGの当時webデザイナーをされていた先輩にデザインを作っていただき、コーディングのみを担当。（コーディングスキルが足りずやっつけ仕事になってしまい申し訳なかった…）
+          </p>
+          <h3>参考リンク</h3>
+          <p>
+            <a href="https://hsm-hx.github.io/NITUCfes2017/" target="_blank">宇部高専第54回高専祭非公式ホームページ</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <input id="modal-trigger-lilia" class="checkbox" type="checkbox">
+      <div class="modal-overlay">
+        <label for="modal-trigger-lilia" class="o-close"></label>
+        <div class="modal-wrap a-center">
+          <label for="modal-trigger-lilia" class="close">&#10006;</label>
+          <h2>リリアと虹色の夜想曲-ノクターン-</h2>
+          <p>
+            第25回コンピュータフェスティバルにて展示した個人制作のカジノRPGゲームです。
+          </p>
+          <p>
+            特殊能力を持つ人々がカジノゲームの腕を競い合う世界で、捨て子の主人公・リリアがカジノオーナーの男に拾われ成長していく物語。<br>
+            コンピュータフェスティバルに出したのは物語の冒頭、チュートリアルのみでしたが微修正が済み次第ネット上での公開を目指しています。
+          </p>
+          <h3>参考リンク</h3>
+          <p>
+            <a href="https://github.com/hsm-hx/comfes2018" target="_blank">hsm-hx/comfes2018(GitHub)</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <input id="modal-trigger-datsuryokuQ" class="checkbox" type="checkbox">
+      <div class="modal-overlay">
+        <label for="modal-trigger-datsuryokuQ" class="o-close"></label>
+        <div class="modal-wrap a-center">
+          <label for="modal-trigger-datsuryokuQ" class="close">&#10006;</label>
+          <h2>脱力探偵Q</h2>
+          <p>
+            コンピュータ部に入部して初めて、第23回コンピュータフェスティバルにて展示・メディアコンテンツ部門にて3位をいただいた映像作品です。
+          </p>
+          <p>
+            蒟蒻ゼリーの名産地で起きた『蒟蒻ゼリー殺人事件』。蒟蒻ゼリーが大好きな探偵・探谷究が事件の真相に迫ります。<br>
+            ストーリー・脚本・探谷究のキャラクターデザイン・音声編集・3Dモデリング/アニメーション制作・姫野 優のボイス・総監督…と非常にたくさんの役割を務めました。
+          </p>
+          <p>
+            また、翌年行われた第24回コンピュータフェスティバルにてメンバーの制作したPVがメディアコンテンツ部門1位に輝きました。
+          </p>
+          <h3>参考リンク</h3>
+          <p>
+            <a href="https://youtu.be/cYJ-kK1DYWQ" target="_blank">脱力探偵Q -前編- | YouTube</a><br>
+            <a href="https://youtu.be/NKcDtutzOGI" target="_blank">脱力探偵Q -後編- | YouTube</a><br>
+            <a href="https://youtu.be/wJpkSz_MPEY" target="_blank">脱力探偵Q　第1弾PV | YouTube</a><br>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <input id="modal-trigger-datsuryokuP" class="checkbox" type="checkbox">
+      <div class="modal-overlay">
+        <label for="modal-trigger-datsuryokuP" class="o-close"></label>
+        <div class="modal-wrap a-center">
+          <label for="modal-trigger-datsuryokuP" class="close">&#10006;</label>
+          <h2>脱力探偵P</h2>
+          <p>
+            第25回コンピュータフェスティバルにて展示・メディアコンテンツ部門にて1位をいただいた映像作品/ノベルゲームです。<br>
+            ゲーム作品はノベルゲームコレクションにて公開中。
+          </p>
+          <p>
+            トマトの名産地で起きた謎の不作事件。トマトが大好きな探偵・大内玲が事件の真相に迫ります。<br>
+            脚本・大内玲のボイスを担当しました。
+          </p>
+          <p>
+            また、翌年行われた第24回コンピュータフェスティバルにてメンバーの制作したPVがメディアコンテンツ部門1位に輝きました。
+          </p>
+          <h3>参考リンク</h3>
+          <p>
+            <a href="https://novelgame.jp/games/show/750" target="_blank">脱力探偵P - ノベルゲームコレクション</a><br>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <input id="modal-trigger-welcome29" class="checkbox" type="checkbox">
+      <div class="modal-overlay">
+        <label for="modal-trigger-welcome29" class="o-close"></label>
+        <div class="modal-wrap a-center">
+          <label for="modal-trigger-welcome29" class="close">&#10006;</label>
+          <h2>WELCOME - 宇部高専コンピュータ部</h2>
+          <p>
+            コンピュータ部の平成29年度新入生歓迎ページです。<br>
+            私が副部長に任命された年で、この年から本格的に新入生勧誘や部活の構造改革などを行ってきました。
+          </p>
+          <p>
+            本格的にwebサイト制作を始めて最初の作品になります。<br>
+            この頃は本当にデザインが苦手だったため、何度も何度も部員にダメ出しをされて挫けそうになりながら作ったサイトです。
+          </p>
+          <h3>参考リンク</h3>
+          <p>
+            <a href="http://ube-k-cclub.sakura.ne.jp/h29/welcome.html" target="_blank">WELCOME - 宇部高専コンピュータ部</a><br>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <input id="modal-trigger-combapp" class="checkbox" type="checkbox">
+      <div class="modal-overlay">
+        <label for="modal-trigger-combapp" class="o-close"></label>
+        <div class="modal-wrap a-center">
+          <label for="modal-trigger-combapp" class="close">&#10006;</label>
+          <h2>CombApp</h2>
+          <p>
+            コンピュータ部の備品管理ツールとして開発したwebアプリケーションです。<br>
+            名前の由来はコンピュータ部→コン部→Comb + App。
+          </p>
+          <p>
+            以前から備品管理が紙媒体や口頭のみで行われており非常に非効率的だと感じていたためwebアプリ開発の練習に制作。<br>
+            GET/POSTの練習程度のプロダクトではありますが、部員から、またTwitter上でも好評をいただきました。
+          </p>
+          <h3>参考リンク</h3>
+          <p>
+            <a href="https://github.com/hsm-hx/combapp" target="_blank">hsm-hx/combapp(GitHub)</a><br>
+            <a href="http://mwc922-hsm.hatenablog.com/entry/2018/05/28/182214" target="_blank">部活で使える備品管理システムを作った話 - Theories of Pleiades</a><br>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <input id="modal-trigger-pxmtg" class="checkbox" type="checkbox">
+      <div class="modal-overlay">
+        <label for="modal-trigger-pxmtg" class="o-close"></label>
+        <div class="modal-wrap a-center">
+          <label for="modal-trigger-pxmtg" class="close">&#10006;</label>
+          <h2>高専プロコン交流会</h2>
+          <p>
+            高専ロボコン交流会に影響を受け、「高専プロコン参加者でも集まって情報交換をする場を作りたい！」と発足したプロジェクトです。<br>
+          </p>
+          <p>
+            成り行きでCDO(Chief Design Officer)に任命されロゴデザインなどをしています。<br>
+            デザイナーとして自分に何ができるのか？というのを考えて活動しています。
+          </p>
+          <h3>参考リンク</h3>
+          <p>
+            <a href="https://twitter.com/pxmtg_official" target="_blank">高専プロコン交流会(仮) | Twitter</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <input id="modal-trigger-chesstrap" class="checkbox" type="checkbox">
+      <div class="modal-overlay">
+        <label for="modal-trigger-chesstrap" class="o-close"></label>
+        <div class="modal-wrap a-center">
+          <label for="modal-trigger-chesstrap" class="close">&#10006;</label>
+          <h2>Chess×Trap</h2>
+          <p>
+            第24回コンピュータフェスティバルにて展示したゲーム作品です。<br>
+            株式会社鳥取県情報センター様より、プレゼンテーションの際の「プログラミングができなくてもゲームが作りたい！」という熱意に対し企業賞をいただきました。
+          </p>
+          <p>
+            当時授業以外でプログラミングを扱ったことはなく、UnrealEngine4との出会いをきっかけにゲーム開発に踏み出しました。<br>
+            ゲームとしては不完全な上、XInputのゲームパッドのみに対応・2人プレイのみという仕様上公開することは難しいのですが、プログラミングの世界へ足を踏み入れるきっかけとなった作品です。
+          </p>
+          <h3>参考リンク</h3>
+          <p>
+            <a href="https://www.ube-k.ac.jp/topics/20170614/" target="_blank">第24回コンピュータフェスティバルで本校学生が入賞(宇部高専公式ホームページ)</a><br>
+            <a href="https://www.slideshare.net/SayakaHata/chesstrap" target="_blank">Chess×Trap | SlideShare</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Works ModalWindows-->
+
     <footer>
-      <a href="#"><img src="img/link-to-top.png"></a>
+      <a href="#" data-scroll><img src="img/link-to-top.png"></a>
     </footer>
+    <script type="text/javascript" src="js/smooth-scroll.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
