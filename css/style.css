@@ -39,6 +39,8 @@ ul{
 }
 
 header{
+  position: sticky;
+  position: -webkit-sticky;
   overflow: hidden;
   margin: 0; padding: 0;
   background: #000;
