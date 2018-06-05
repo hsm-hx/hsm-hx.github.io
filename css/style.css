@@ -165,7 +165,7 @@ header ul li:nth-of-type(2){
     left: 53%;
   }
   .timeline-right .timeline-date{
-    right: 53%;
+    left: 40%;
   }
   .timeline-circle{
     left: 50%;
@@ -179,7 +179,7 @@ header ul li:nth-of-type(2){
     left: 530px;
   }
   .timeline-right .timeline-date{
-    right: 530px;
+    left: 400px;
   }
   .timeline-circle{
     left: 500px;
