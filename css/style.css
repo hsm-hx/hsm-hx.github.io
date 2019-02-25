@@ -108,7 +108,7 @@ header ul li:nth-of-type(2){
   content: "";
   position: absolute;
   margin-top: -50px; margin-left: -2px;
-  height: 1250px; width: 0;
+  height: 1730px; width: 0;
   border: 2px #fff solid;
 }
 .timeline li{
